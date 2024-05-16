@@ -23,13 +23,14 @@
       }
 
       .pricing-plan {
+        display: flex;
         flex: 0 1 280px;
         background-color: beige;
         padding: 2em;
         border-radius: 5%;
-        text-align: center;
+        text-align:center;
         flex-direction: column;
-        align-content: center;
+        justify-content: center;
       }
 
       .plan-title {
@@ -48,7 +49,9 @@
         color: white;
         border: 0;
         padding: 0.7em;
-        border-radius: 10%;
+        border-radius: 2cap;
+        width: 20em;
+        align-self: center;
         margin-top: 1em;
       }
 
@@ -60,14 +63,14 @@
       @media (max-width: 1250px) {
         .pricing-container {
           flex-direction: column;
-          height: 100%;
+          height: fit-content;
           row-gap: 2em;
           margin-top: 4em;
           margin-bottom: 4em;
         }
 
         .pricing-plan {   
-          width: 20em;
+          width: 20em;;
         }
       }
     </style>
