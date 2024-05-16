@@ -11,6 +11,7 @@
     <style>
       body {
         font-family: "Sono", sans-serif;
+        margin: 0;
       }
 
       .pricing-container {
@@ -27,6 +28,8 @@
         padding: 2em;
         border-radius: 5%;
         text-align: center;
+        flex-direction: column;
+        align-content: center;
       }
 
       .plan-title {
@@ -54,17 +57,16 @@
         padding-left: 0px;
       }
 
-      /* Hint: What can you do with a media query and flexbox? */
       @media (max-width: 1250px) {
         .pricing-container {
           flex-direction: column;
+          height: 100%;
           row-gap: 2em;
-          justify-content: flex-start;
-          margin-top: 7vh;
-          margin-bottom: 37vh;
+          margin-top: 4em;
+          margin-bottom: 4em;
         }
 
-        .pricing-plan {
+        .pricing-plan {   
           width: 20em;
         }
       }
